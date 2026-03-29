@@ -3,7 +3,7 @@
 
 ### *Advanced Browser-Level Persistence Keylogger*
 
-![Alta-Tracker Screenshot](/server.png)
+![Alta-Tracker Screenshot](/pannel.png)
 
 -----
 
@@ -68,13 +68,13 @@ python3 setup.py
 
 ### 3\. Initialize the Framework
 
-Start the C2 server and listener.
+Start the node.js server by running Start.py and input your port number for listener.
 
 ```bash
 python3 Start.py
 ```
 
-![Alta-Tracker Screenshot](/pannel.png)
+![Alta-Tracker Screenshot](/server.png)
 
 Upon startup, the terminal will generate a **LAN Access URL** (e.g., `http://192.168.0.196:3000`).
 
