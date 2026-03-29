@@ -17,18 +17,35 @@ The core payload is disguised as a legitimate-looking Chrome Extension. Once sid
 
 ## ✨ Key Features
 
-  * **🎭 Stealth Payload:** Injected as a legitimate Google Chrome extension to bypass standard OS-level file integrity checks.
-  * **🌐 Hybrid Architecture:** \* **Frontend:** JavaScript-based interception engine.
-      * **Backend:** Node.js server for real-time log ingestion.
-      * **Automation:** Python orchestration scripts for rapid deployment.
-  * **隐 Obfuscation:** Designed to blend in with browser background processes.
-  * **📊 Structured Logging:** Raw data is processed and stored in a readable format for post-engagement analysis.
+### 🛡️ Technical Scope & Limitations
+**Note:** This is a **Browser-Level Layer 7** interceptor. It operates within the context of the browser process and does not hook into the Operating System (OS) kernel.
+
+* **✅ What it captures:** * Any text typed into website forms (Login fields, Credit Card forms, Search bars).
+    * Data entered into web-based emails (Gmail, Outlook Web).
+    * Social media messages sent via browser tabs.
+    * URL navigation history and active tab titles.
+* **❌ What it DOES NOT capture:**
+    * Windows/Linux/macOS login passwords.
+    * Desktop applications (Discord App, Slack App, Microsoft Word).
+    * Terminal/Shell commands.
+    * System-level hotkeys.
+
+---
+
+* **🎭 Stealth Extension Payload:** Deployed as a "Unpacked Extension" in Google Chrome. It bypasses OS-level file integrity scanners because the "malicious" activity stays entirely within the browser's memory space.
+* **🌐 Hybrid Architecture:** * **Frontend (JS):** A background script engine that hooks into the DOM to intercept `input` events in real-time.
+    * **Backend (Node.js):** A high-performance REST API for silent log ingestion.
+    * **Automation (Python):** A centralized "Start.py" script that handles server initialization and dynamic payload packaging.
+* **🔏 Targeted Interception:** Specifically designed to capture high-value "Web-Data" which is often unencrypted at the input level before being sent over HTTPS.
+* **📊 Structured Logging:** Converts raw keystroke streams into organized, time-stamped logs for post-engagement analysis.
+
+---
 
 -----
 
 ## 👨‍💻 Developer
 
-  * **Creator:** [Muhammad Alwaz]
+  * **Creator:** **##Muhammad Alwaz**
   
 
 -----
