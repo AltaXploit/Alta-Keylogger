@@ -3,7 +3,7 @@
 
 ### *Advanced Browser-Level Persistence Keylogger*
 
-![Alta-Tracker Screenshot](/pannel.png)
+![Alta-Tracker Screenshot](/server.png)
 
 -----
 
@@ -16,6 +16,8 @@ The core payload is disguised as a legitimate-looking Chrome Extension. Once sid
 -----
 
 ## ✨ Key Features
+
+
 
 ### 🛡️ Technical Scope & Limitations
 **Note:** This is a **Browser-Level Layer 7** interceptor. It operates within the context of the browser process and does not hook into the Operating System (OS) kernel.
@@ -73,6 +75,9 @@ Start the C2 server and listener.
 ```bash
 python3 Start.py
 ```
+
+![Alta-Tracker Screenshot](/server.png)
+
 Upon startup, the terminal will generate a **LAN Access URL** (e.g., `http://192.168.0.196:3000`).
 
 ### 3. Access the Control Panel
