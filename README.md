@@ -32,13 +32,11 @@ The core payload is disguised as a legitimate-looking Chrome Extension. Once sid
     * Terminal/Shell commands.
     * System-level hotkeys.
 
----
 
 * **🎭 Stealth Extension Payload:** Deployed as a "Unpacked Extension" in Google Chrome. It bypasses OS-level file integrity scanners because the "malicious" activity stays entirely within the browser's memory space.
 * **🔏 Targeted Interception:** Specifically designed to capture high-value "Web-Data" which is often unencrypted at the input level before being sent over HTTPS.
 * **📊 Structured Logging:** Converts raw keystroke streams into organized, time-stamped logs for post-engagement analysis.
 
----
 
 -----
 
