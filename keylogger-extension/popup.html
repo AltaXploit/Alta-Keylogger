@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            width: 300px;
+            padding: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            margin: 0;
+        }
+        .container { display: flex; flex-direction: column; align-items: center; }
+        .header {
+            display: flex; align-items: center; width: 100%;
+            margin-bottom: 16px; border-bottom: 1px solid #ddd; padding-bottom: 8px;
+        }
+        .logo { width: 32px; height: 32px; margin-right: 10px; }
+        .title { font-size: 18px; font-weight: 600; color: #2c3e50; }
+        .status-card {
+            background: white; border-radius: 8px; padding: 12px; width: 100%;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 12px;
+        }
+        .status-item { display: flex; justify-content: space-between; margin-bottom: 8px; }
+        .status-label { color: #7f8c8d; }
+        .status-value { font-weight: 600; }
+        .connected { color: #27ae60; }
+        .disconnected { color: #e74c3c; }
+        .footer {
+            font-size: 11px; color: #95a5a6; text-align: center; margin-top: 8px;
+        }
+        button {
+            background: #3498db; color: white; border: none; padding: 8px 16px;
+            border-radius: 4px; cursor: pointer; font-size: 14px; width: 100%;
+        }
+        .stats {
+            display: flex; justify-content: space-around; margin-top: 10px;
+        }
+        .stat { text-align: center; }
+        .stat-value { font-size: 20px; font-weight: 600; color: #2c3e50; }
+        .stat-label { font-size: 10px; color: #7f8c8d; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="icon.png" class="logo" alt="logo">
+            <span class="title">Network Performance Helper</span>
+        </div>
+        <div class="status-card">
+            <div class="status-item">
+                <span class="status-label">Connection:</span>
+                <span class="status-value" id="connectionStatus">Checking...</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">Monitoring:</span>
+                <span class="status-value" id="monitoringStatus">Active</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">Data sent today:</span>
+                <span class="status-value" id="dataSent">0 KB</span>
+            </div>
+        </div>
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value" id="cpu">42%</div>
+                <div class="stat-label">CPU</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="ram">1.2 GB</div>
+                <div class="stat-label">RAM</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="ping">23 ms</div>
+                <div class="stat-label">Ping</div>
+            </div>
+        </div>
+        <button id="detailsBtn">View Detailed Report</button>
+        <div class="footer">v1.2.3 • IT Diagnostic Tool</div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
