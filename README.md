@@ -76,7 +76,7 @@ Start the C2 server and listener.
 python3 Start.py
 ```
 
-![Alta-Tracker Screenshot](/server.png)
+![Alta-Tracker Screenshot](/pannel.png)
 
 Upon startup, the terminal will generate a **LAN Access URL** (e.g., `http://192.168.0.196:3000`).
 
