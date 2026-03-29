@@ -3,7 +3,7 @@
 
 ### *Advanced Browser-Level Persistence Keylogger*
 
-*(Replace the link above with your actual screenshot once uploaded to GitHub)*
+*![Alta-Tracker Screenshot](Alta-Keylogger/pannel.png) *
 
 -----
 
@@ -33,9 +33,6 @@ The core payload is disguised as a legitimate-looking Chrome Extension. Once sid
 ---
 
 * **🎭 Stealth Extension Payload:** Deployed as a "Unpacked Extension" in Google Chrome. It bypasses OS-level file integrity scanners because the "malicious" activity stays entirely within the browser's memory space.
-* **🌐 Hybrid Architecture:** * **Frontend (JS):** A background script engine that hooks into the DOM to intercept `input` events in real-time.
-    * **Backend (Node.js):** A high-performance REST API for silent log ingestion.
-    * **Automation (Python):** A centralized "Start.py" script that handles server initialization and dynamic payload packaging.
 * **🔏 Targeted Interception:** Specifically designed to capture high-value "Web-Data" which is often unencrypted at the input level before being sent over HTTPS.
 * **📊 Structured Logging:** Converts raw keystroke streams into organized, time-stamped logs for post-engagement analysis.
 
@@ -45,7 +42,7 @@ The core payload is disguised as a legitimate-looking Chrome Extension. Once sid
 
 ## 👨‍💻 Developer
 
-  * **Creator:** **##Muhammad Alwaz**
+  * **Creator:** **Muhammad Alwaz**
   
 
 -----
