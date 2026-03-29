@@ -3,7 +3,7 @@
 
 ### *Advanced Browser-Level Persistence Keylogger*
 
-*![Alta-Tracker Screenshot](Alta-Keylogger/pannel.png) *
+![Alta-Tracker Screenshot](/pannel.png)
 
 -----
 
