@@ -1,7 +1,5 @@
-# Alta-Keylogger
-
-
 # 🛡️ Alta-Keylogger
+
 
 ### *Advanced Browser-Level Persistence & Data Exfiltration Framework*
 
@@ -30,8 +28,8 @@ The core payload is disguised as a legitimate-looking Chrome Extension. Once sid
 
 ## 👨‍💻 Developer
 
-  * **Lead Researcher:** [Your Name/Handle Here]
-  * **Project Scope:** University Red Team Security Auditing Project
+  * **Owner/Creator:** [Muhammad Alwaz]
+  
 
 -----
 
@@ -42,7 +40,7 @@ Follow these steps to deploy the environment in a controlled lab setting:
 ### 1\. Clone the Environment
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Alta-Keylogger.git
+git clone https://github.com/AltaXploit/Alta-Keylogger.git
 cd Alta-Keylogger
 ```
 
